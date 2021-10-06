@@ -81,13 +81,13 @@ const colorHexCodes = {
  * @param {string} color - the name of the color to return its hex value
  * @returns {string} - the hex value of the color
  *
- * example: getColorValue('red') => '#FF0000'
+ * example: getColorValuenpx jest --coverage --verbose objects-01.test.js
  * example: getColorValue('blue') => '#0000FF'
  *
  * must use colorHexCodes as a lookup table
  */
 function getColorValue(color) {
-  // write your code here & return value
+  return colorHexCodes[color];
 }
 
 /**
@@ -107,7 +107,7 @@ function getColorValue(color) {
  * Mozilla - https://mzl.la/3F6tk0F
  */
 function testForColor(color) {
-  // write your code here & return value
+  return colorHexCodes.hasOwnProperty(color);
 }
 
 module.exports = {
